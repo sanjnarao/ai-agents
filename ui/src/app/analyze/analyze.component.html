@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Code → Business Doc (Local)</h1>
+
+  <div class="card">
+    <label><strong>Solution ZIP</strong> (must include .sln + all projects)</label>
+    <input type="file" accept=".zip" (change)="onZipChange($event)" />
+
+    <label class="mt"><strong>Extra Docs (optional)</strong> (.md / .txt)</label>
+    <input type="file" multiple accept=".md,.txt" (change)="onDocsChange($event)" />
+
+    <button class="mt" (click)="submit()" [disabled]="isUploading()">Analyze</button>
+
+    <div class="mt warn" *ngIf="error()">{{ error() }}</div>
+    <div class="mt" *ngIf="isUploading()">Processing… this may take a minute.</div>
+  </div>
+
+  <div class="card mt" *ngIf="resultMarkdown()">
+    <h2>Generated Documentation</h2>
+    <!-- simple rendering; or integrate a Markdown renderer later -->
+    <pre>{{ resultMarkdown() }}</pre>
+  </div>
+</div>
