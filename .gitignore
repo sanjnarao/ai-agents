@@ -1,0 +1,29 @@
+# Python
+*.pyc
+*.pyo
+api/__pycache__/
+api/.venv/
+
+# Node.js
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# IDEs
+.vscode/
+.idea/
+analyzer/.vs/
+analyzer/SolutionAnalyzer/bin
+analyzer/SolutionAnalyzer/obj
+
+# ui
+ui/.angular
+ui/.vscode/
+ui/node_modules
+ui/src/
+ui/package-lock.json
