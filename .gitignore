@@ -27,3 +27,4 @@ ui/.vscode/
 ui/node_modules
 ui/src/
 ui/package-lock.json
+/.vs
