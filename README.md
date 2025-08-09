@@ -1,7 +1,8 @@
 # Ollama RUN
 
  - ollama pull llama3
- - ollama serve
+ - ollama serve OR
+ - ollama run llama3
 
 # Build analyzer
 
